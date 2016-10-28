@@ -14,9 +14,7 @@
         from_date: '2016-09-30',
         to_date: '2016-10-28',
       };
-      var eventsArr = ['[welcome page] Chose employer role','Submitted Company for Approval'];
-      
-      MP.api.funnel(eventsArr, params).done(function(results){
+      MP.api.funnel('[welcome page] Chose employer role','Submitted Company for Approval', params).done(function(results){
         console.log(results)
       });
     </script>
